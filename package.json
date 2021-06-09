@@ -28,5 +28,9 @@
   },
   "engines": {
     "node": "12.24"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4",
+    "supertest": "^6.1.3"
   }
 }

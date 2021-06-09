@@ -16,13 +16,13 @@ const commonConfig = {
 const prodConfig = {
   port: process.env.PORT || 3000,
   users: {
-    'admin': 'someStrongPassword'
+    'manager': 'password'
   },
 };
 
 const devConfig = {
   users: {
-    'admin': 'admin'
+    'admin': 'devPassword'
   },
 };
 
