@@ -1,0 +1,24 @@
+block menu
+    aside(class='menu-wrapper')
+        ul(class='menu')
+            each item in menu
+                a(class='menu__link' href=item.href)
+                    li(class='menu__item') #{item.title}
+
+html
+    head
+        title= title
+        style
+            include style.css
+    body(class="app")
+        block menu
+        block content
+
+
+
+
+
+
+
+
+

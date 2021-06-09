@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    if reportsByMonth
+        .content-wrapper
+            each report, month in reportsByMonth
+                main(class='report')
+                    .month #{month}
+                    div(class='report__row')
+                        each caption in report.captions
+                            div(class='report__cell report__cell_caption') #{caption}
+                    each entry in report.entries
+                        div(class='report__row')
+                            each attribute in entry
+                                div(class='report__cell') #{attribute}

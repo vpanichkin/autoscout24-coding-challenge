@@ -1,0 +1,64 @@
+.app {
+    display: flex;
+    margin: 0;
+    padding: 5px;
+}
+
+.menu-wrapper {
+    width: 20%;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu__item {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu__item:hover {
+    background: #eeeeee;
+}
+
+.menu__link {
+    display: block;
+    text-decoration: none;
+    color: black
+}
+
+.content-wrapper {
+    margin:10px;
+    padding: 0 0 20px 0;
+    width: 80%;
+}
+
+/* Table styles */
+
+.report {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.report__row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.report__row:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.report__cell {
+    justify-items: center;
+    margin: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.report__cell_caption {
+    font-weight: 800;
+}
+
+

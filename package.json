@@ -1,0 +1,32 @@
+{
+  "name": "autscout",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "start:development": "NODE_ENV=development node src/server.js"
+  },
+  "dependencies": {
+    "@thi.ng/geom-isec": "^0.7.23",
+    "axios": "^0.21.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "debug": "~2.6.9",
+    "delaunator": "^5.0.0",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.9",
+    "morgan": "~1.9.1",
+    "multer": "1.4.2",
+    "multer-gridfs-storage": "4.2.0",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0",
+    "pug": "^3.0.2",
+    "winston": "^3.3.3"
+  },
+  "engines": {
+    "node": "12.24"
+  }
+}
