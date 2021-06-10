@@ -2,6 +2,7 @@ const CSVToJSON = require('csvtojson');
 const path = require('path');
 
 const logger = require('../shared/logger.js');
+const { withCache } = require('../shared/utils.js');
 
 async function fetchFromCSV(filePath) {
   try {
@@ -14,4 +15,4 @@ async function fetchFromCSV(filePath) {
 
 }
 
-module.exports = fetchFromCSV;
+module.exports = withCache(fetchFromCSV);

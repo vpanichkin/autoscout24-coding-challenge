@@ -1,3 +1,4 @@
+const { formatShare } = require('../../shared/mappers/stringMappers.js');
 const { getShare } = require('../../shared/utils.js');
 
 function calculateDistribution(files) {
@@ -12,7 +13,7 @@ function calculateDistribution(files) {
     entries: []
   };
   Object.entries(carsTotalPerMake).forEach(([make, itemsPerMake]) => {
-    distribution.entries.push([make, `${getShare(itemsPerMake, listingFile.length)}%`]);
+    distribution.entries.push([make, formatShare(getShare(itemsPerMake, listingFile.length))]);
   });
   return distribution;
 }

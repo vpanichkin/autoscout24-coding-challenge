@@ -1,5 +1,4 @@
-const { formatToMoney } = require('../../shared/mappers/stringMappers.js');
-const { formatToMillage } = require('../../shared/mappers/stringMappers.js');
+const { formatToMoney, formatToMileage } = require('../../shared/mappers/stringMappers.js');
 
 function calculateTop(files, topN) {
   const [listings, contacts] = files;
@@ -49,13 +48,13 @@ function mapToListingDictionary(listing) {
 
 function fillReport(listings, contactsDuringMonth) {
   const report = {
-    captions: ['Ranking', 'Listing Id', 'Make', 'Selling Price', 'Milleage', 'Total amount of contacts'],
+    captions: ['Ranking', 'Listing Id', 'Make', 'Selling Price', 'Mileage', 'Total amount of contacts'],
     entries: []
   };
   for (let i = 0; i < contactsDuringMonth.length; i++) {
     const [id, totalContactsAmount] = contactsDuringMonth[i];
     const { make, price, mileage } = listings[id];
-    const entry = [i + 1, id, make, formatToMoney(price), formatToMillage(mileage), totalContactsAmount];
+    const entry = [i + 1, id, make, formatToMoney(price), formatToMileage(mileage), totalContactsAmount];
     report.entries.push(entry);
   }
   return report;

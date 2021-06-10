@@ -16,13 +16,19 @@ const commonConfig = {
 const prodConfig = {
   port: process.env.PORT || 3000,
   users: {
-    'manager': 'password'
+    'admin': 'admin'
   },
 };
 
 const devConfig = {
   users: {
-    'admin': 'devPassword'
+    'dev': 'dev'
+  },
+};
+
+const testConfig = {
+  users: {
+    'test': 'test'
   },
 };
 
@@ -30,6 +36,8 @@ function getConfigFor(environment) {
   switch (environment) {
     case 'development':
       return { ...commonConfig, ...devConfig };
+    case 'test':
+      return { ...commonConfig, ...testConfig };
     default:
       return { ...commonConfig, ...prodConfig };
   }

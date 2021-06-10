@@ -1,4 +1,4 @@
-## Coding Challenge: AutoScout24 Listing Report
+## Coding Challenge: Listing Report
 
 ## Prerequesties
 
@@ -18,6 +18,13 @@
 ```bash
     npm start
 ```
+
+## Testing
+1. To run test, run:
+```
+   npm test
+```
+
 ## Folder structure
 
 * **[src](./src)**: Root folder with the source code

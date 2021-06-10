@@ -2,11 +2,16 @@ function formatToMoney(input) {
   return `€ ${parseInt(input).toLocaleString().replace(',', '.')}, -`;
 }
 
-function formatToMillage(input) {
+function formatToMileage(input) {
   return `${input} KM`;
+}
+
+function formatShare(input) {
+  return `${input}%`;
 }
 
 module.exports = {
   formatToMoney,
-  formatToMillage
+  formatToMileage,
+  formatShare
 };
