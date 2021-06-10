@@ -1,6 +1,6 @@
 # Coding Challenge: Listing Report
 
-## Prerequesties
+## Prerequisites
 
 * [Node V12+](https://nodejs.org/en/download/releases/)
 

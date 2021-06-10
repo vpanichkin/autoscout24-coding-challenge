@@ -5,8 +5,9 @@ const logger = require('../shared/logger.js');
 const { withCache } = require('../shared/utils.js');
 
 async function fetchFromCSV(filePath) {
+  let normalizedPath;
   try {
-    const normalizedPath = path.join(process.cwd(), filePath);
+    normalizedPath = path.join(process.cwd(), filePath);
     return CSVToJSON().fromFile(normalizedPath);
   } catch (error) {
     logger.error(`The file cannot be found: ${normalizedPath}`);
