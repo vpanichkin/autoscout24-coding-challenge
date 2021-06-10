@@ -1,4 +1,4 @@
-## Coding Challenge: Listing Report
+# Coding Challenge: Listing Report
 
 ## Prerequesties
 
