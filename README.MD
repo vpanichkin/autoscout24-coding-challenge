@@ -19,8 +19,10 @@
     npm start
 ```
 
+4. Visit [http://localhost:3000](http://localhost:3000/)
+
 ## Testing
-1. To run test, run:
+1. To run test, use:
 ```
    npm test
 ```
